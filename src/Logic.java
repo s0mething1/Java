@@ -1,4 +1,3 @@
-import java.util.Random;
 public class Logic {
     protected int randomNumber;
     protected String randomNumberString;
