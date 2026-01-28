@@ -7,8 +7,8 @@ public class Logic {
     protected int lowerBound;
 
     Logic() {
-        this.upperBound = 99999;
-        this.lowerBound = 10000;
+        this.upperBound = 150;
+        this.lowerBound = 100;
         this.randomNumber = (int)(Math.random() * (this.upperBound - this.lowerBound + 1)) + this.lowerBound;
         this.randomNumberString = String.valueOf(randomNumber);
     }

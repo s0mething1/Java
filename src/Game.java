@@ -1,4 +1,3 @@
-import java.awt.desktop.SystemEventListener;
 import java.util.Scanner;
 
 public class Game {
@@ -13,17 +12,14 @@ public class Game {
 
 
         while (check != 0) {
-            System.out.println("1 - New Game");
-            System.out.println("0 - Exit");
+            System.out.println("1 - New Game\n0 - Exit");
             check = scanner.nextInt();
             //loigc for start or exit
             switch (check) {
                 case 1:
-                    System.out.println("Game startsssss");
-                    System.out.println("Do you wanna to set upper and lower bounds, or use default settings?");
+                    System.out.println("Game startsssss\nDo you wanna to set upper and lower bounds, or use default settings?");
                     int checkOne;
-                    System.out.println("1 - Yes");
-                    System.out.println("2 - No");
+                    System.out.println("1 - Yes\n2 - No");
                     checkOne = scanner.nextInt();
                     if (checkOne == 1) {
                         int upperBound;
@@ -36,11 +32,10 @@ public class Game {
                         System.out.println(newGame.getRandomNumber());
                         int playerNumber = -2;
                         while (playerNumber != -1){
-                            System.out.println("To leave type: -1");
-                            System.out.print("Type any number from " + newGame.getLowerBound() + " to " + newGame.getUpperBound() + ":");
+                            System.out.print("To leave type: -1\nType any number from " + newGame.getLowerBound() + " to " + newGame.getUpperBound() + ":");
                             playerNumber = scanner.nextInt();
                             System.out.println(newGame.playerToGuess(playerNumber));
-                            if (newGame.playerWon() == true) {
+                            if (newGame.playerWon()) {
                                 playerNumber = -1;
                             }
                         }
@@ -49,11 +44,10 @@ public class Game {
                         System.out.println(newGame.getRandomNumber());
                         int playerNumber = -2;
                         while (playerNumber != -1){
-                            System.out.println("To leave type: -1");
-                            System.out.print("Type any number from " + newGame.getLowerBound() + " to " + newGame.getUpperBound() + ":");
+                            System.out.print("To leave type: -1\nType any number from " + newGame.getLowerBound() + " to " + newGame.getUpperBound() + ":");
                             playerNumber = scanner.nextInt();
                             System.out.println(newGame.playerToGuess(playerNumber));
-                            if (newGame.playerWon() == true) {
+                            if (newGame.playerWon()) {
                                 playerNumber = -1;
                             }
                         }
