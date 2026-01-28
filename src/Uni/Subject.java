@@ -19,7 +19,7 @@ public class Subject {
 
     public void addStudent(Student student) {
         this.studentsList.add(student);
-        student.addCourses(this.subjectName);
+        student.addSubject(this);
     }
 
     public void addTeacher(Teachers teacher) {

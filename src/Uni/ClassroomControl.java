@@ -1,17 +1,32 @@
 package Uni;
 
+import java.util.Scanner;
+
 public class ClassroomControl {
     public static void main(String[] args) {
-        Teachers teacherOne = new Teachers("Shohruh", "Sattarov", 123);
-        Student studentOne = new Student("Sabosha", "Aslidinova", 12, "Junior");
-        Subject math = new Subject("Math", "M012", 3);
-        math.addStudent(studentOne);
-        math.addTeacher(teacherOne);
-        System.out.println(math.toString());
-        studentOne.joinedCourses();
-        teacherOne.sub();
+        Rooms roomOne = new Rooms();
+        Rooms roomTwo = new Rooms();
+        Rooms roomThree = new Rooms();
+        Rooms roomFour = new Rooms();
+        Scanner scanner = new Scanner(System.in);
+        int flagOne = 0;
+        while (flagOne != -1){
+            System.out.print("Do you want to add new Teacher or Student?");
+            String answer = scanner.nextLine();
+            if(answer.toLowerCase().equals("teacher")) {
+
+                System.out.print("Enter First name: ");
+                String firstName = scanner.nextLine();
+                System.out.print("Enter Second name: ");
+                String secondName = scanner.nextLine();
+
+
+            }
+        }
 
 
 
     }
 }
+
+
